@@ -1,7 +1,8 @@
 :root{
     --font-title: "Roboto", sans-serif;
     --font-text: "Montserrat", sans-serif;
-    --background: 
+    --font-title-size: 4rem;
+    --font-text-size: 3rem;
 }
 *{
     margin: 0;
@@ -15,4 +16,71 @@ body{
     width: 100%;
     height: auto;
     text-align: center;
+    min-width: 320px;
+    min-height: auto;
+}
+head .header-container{
+    width: 90%;
+    height: 80px;
+}
+.header-container .header-container__title{
+    padding: 20px;
+    font-family: var(--font-title);
+    font-size: var(--font-title-size);
+}
+main{
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 80%;
+    height: 80%;
+    min-width: 288px;
+    min-height: 600px;
+    margin: 20px auto;
+}
+main .app-container{
+    width: 70%;
+    height: 70%;
+    margin: 0 auto;
+}
+.app-container .app-container__title{
+    font-family: var(--font-title);
+    font-size: var(--font-text-size);
+    margin: 10px 0 20px 0;
+}
+.app-container .app-container__inputs{
+}
+.app-container__inputs .input-temperature{
+    min-width: 100px;
+    margin: 10px auto;
+    height: 20px;
+}
+.app-container .input-select{
+    margin-bottom: 10px;
+}
+.app-container__button button{
+    margin-bottom: 20px;
+    min-width: 100px;
+    width: 150px;
+    height: 50px;
+    font-family: var(--font-text);
+    font-size: 2rem;
+}
+.app-container .app-container__result{
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+.app-container__result p{
+    font-family: var(--font-text);
+    font-weight: bold;
+    padding: 10px;
+}
+.footer-container{
+    font-family: var(--font-text);
+    padding-bottom: 20px;
+    font-weight: bold;
 }

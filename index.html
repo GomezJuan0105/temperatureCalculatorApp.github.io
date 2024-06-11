@@ -17,17 +17,26 @@
         <h1 class="header-container__title">Temperature Calculator App</h1>
     </header>
     <main>
-        <section>
-            <h2>Convert Celcius to Fanrenheit and vice versa</h2>
-            <div>
-                <input type="text" name="temperature" id="temperature">
-                <select>
+        <section class="app-container">
+            <h2 class="app-container__title">Convert Celcius to Fanrenheit and vice versa.</h2>
+            <div class="app-container__inputs">
+                <input type="text" name="temperature" id="temperature" class="input-temperature">
+                <select class="input-select">
                     <option>C</option>
                     <option>F</option>
                 </select>
+                <div class="app-container__button">
+                    <button>Calculate</button>
+                </div>
+            </div>
+            <div class="app-container__result">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus sint consequatur nisi accusamus esse ab provident blanditiis optio? Odio, consequuntur ut? Incidunt explicabo assumenda aliquam autem natus modi. Consequatur, itaque.</p>
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer class="footer-container">
+        <p>&copy; 2024 Temperature Calculator App | All rights reserved.</p>
+    </footer>
+    <script src="main.js"></script>
 </body>
 </html>
